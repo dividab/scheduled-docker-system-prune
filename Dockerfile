@@ -1,8 +1,7 @@
-
 FROM docker:17.07.0-ce
-ENV CLEAN_PERIOD=**None**
+RUN apk update
+RUN apk add bash
+ENV DELAY_TIME=**None**
 
 ADD run.sh /run.sh
 ENTRYPOINT ["/run.sh"]
-
-#docker run -v /var/run/docker.sock:/var/run/docker.sock
