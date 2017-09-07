@@ -13,6 +13,6 @@ fi
 while [ 1 ]
 do
 echo "=> Waiting ${DELAY_TIME} seconds before cleaning"
-    sleep ${DELAY_TIME} & wait
     docker system prune --all --force
+    sleep ${DELAY_TIME} & wait
 done
