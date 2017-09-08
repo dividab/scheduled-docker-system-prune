@@ -1,3 +1,7 @@
+# scheduled-docker-system-prune
+
+> Runs docker system prune on an interval
+
 ## How it works
 Runs the command `docker system prune --all --force` via the hosts docker.sock on an interval.
 
